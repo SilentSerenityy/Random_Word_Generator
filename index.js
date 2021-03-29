@@ -22,7 +22,7 @@ app.get('/', function(req,res) {
 
     font-size: 2em;
 
-    background-color: #b8a1ff; background-image: url(background.png);
+    background-color: #b8a1ff; background-image: url(background.jpg);
   }
 
   a{
@@ -47,13 +47,13 @@ app.get('/', function(req,res) {
 
 function RandomWordGenerator(amt){
 
-  let str = "Here are the Random Words!\t";
+  let randomword = "Here are the Random Words!\t";
 
   for(let x = 0 ; x < amt ; x++) {
-    str += words[Math.floor(Math.random()*words.length)];
+    randomword += words[Math.floor(Math.random()*words.length)];
   }
 
-  return str;
+  return randomword;
 
 }
 
